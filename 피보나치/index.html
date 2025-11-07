@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 user-scalable=no">
+  <title>fuck</title>
+  <style>
+    #answer{
+      position:absolute;
+      left:100px;
+      top:200px;
+      
+    }
+    #submit{
+      position:absolute;
+      left:170px;
+      top:230px;
+      
+    }
+  
+  </style>
+  <script type="text/javascript">
+    function UserInput(){
+      const result = 1123581321345589144233377610987;
+      if (result == document.getElementById('answer').value){
+        alert("정답");
+      }
+      else{
+        alert("오답\n1123581321345589144233377610987임")
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="answer">피보나치 수열을 처음부터 쓰세요(띄어쓰기 없이 
+    예》11235)</label>
+  <input type="text" id="answer" placeholder="답을 입력하시오."/> <br />
+  <input type="submit" value="제출" id="submit" onclick="UserInput()"/>
+</body>
+</html>
